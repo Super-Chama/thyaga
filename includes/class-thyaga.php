@@ -172,7 +172,8 @@ class Thyaga {
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-
+		$this->loader->add_action( 'woocommerce_before_checkout_form', $plugin_public, 'render_thyaga_banner' );
+		// $this->loader->add_action( 'woocommerce_checkout_before_customer_details', $plugin_public, 'render_thyaga_form' );
 	}
 
 	/**

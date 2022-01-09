@@ -100,4 +100,23 @@ class Thyaga_Public {
 
 	}
 
+
+	/**
+	 * Display thyaga banner
+	 *
+	 * @since    1.0.0
+	 */
+	public function render_thyaga_banner() {
+		include( plugin_dir_path( __FILE__ ) . 'partials/thyaga-banner.php' );
+	}
+
+
+	/**
+	 * Display thyaga redeem form
+	 *
+	 * @since    1.0.0
+	 */
+	public function render_thyaga_form() {
+		
+	}
 }

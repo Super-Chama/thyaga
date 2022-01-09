@@ -14,7 +14,7 @@ module.exports = {
 	},
 	output: {
 		publicPath: '',
-		path: path.resolve(__dirname, './prod'),
+		path: path.resolve(__dirname, './build'),
 		filename: '[name].[contenthash].bundle.js' // for production use [contenthash], for developement use [hash]
 	},
 	optimization: {

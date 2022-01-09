@@ -12,8 +12,8 @@ module.exports = {
 		index: path.join(__dirname, 'src/index.jsx')
 	},
 	output: {
-		path: path.resolve(__dirname, './prod'),
-		filename: '[name].[hash].bundle.js' // for production use [contenthash], for developement use [hash]
+		path: path.resolve(__dirname, '../js/'),
+		filename: 'thyaga.bundle.js' // for production use [contenthash], for developement use [hash]
 	},
 	plugins: [
 		new MiniCssExtractPlugin({ filename: '[name].[contenthash].css', chunkFilename: '[id].[contenthash].css' }),

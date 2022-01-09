@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build:dev": "webpack --config ./webpack.config.js",
+		"build:dev": "webpack --config ./webpack.config.js --watch",
 		"build:prod": "webpack --config ./webpack.config.prod.js"
 	},
 	"devDependencies": {
@@ -38,7 +38,9 @@
 		"webpack-cli": "^3.3.12"
 	},
 	"dependencies": {
+		"iframe-resizer-react": "^1.1.0",
 		"react": "^16.13.1",
-		"react-dom": "^16.13.1"
+		"react-dom": "^16.13.1",
+		"react-modal": "^3.14.4"
 	}
 }
